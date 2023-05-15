@@ -13,6 +13,8 @@
   - [ConfigMap Commands](#configmap-commands)
   - [Secret Commands](#secret-commands)
   - [Rollout Commands](#rollout-commands)
+  - [Job Commands](#job-commands)
+  - [CronJob Commands](#cronjob-commands)
 
 
 
@@ -180,5 +182,25 @@
 | Undo deployment with specific revision | `kubectl rollout undo deployment <deployment_name> --to-revision=<revision_number>` |
 | Get all revisions of deployment | `kubectl rollout history deployment <deployment_name>` |
 | Get specific revision of deployment | `kubectl rollout history deployment <deployment_name> --revision=<revision_number>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Job Commands
+| Name | Command |
+| --- | --- |
+| Get job | `kubectl get job <job_name>` |
+| Get job in yaml | `kubectl get job <job_name> -o yaml` |
+| Edit jog in yaml | `kubectl edit job <job_name>` |
+| Describe job | `kubectl describe job <job_name>` |
+| Delete job | `kubectl delete job <job_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## CronJob Commands
+| Name | Command |
+| --- | --- |
+| Get cronjob | `kubectl get cronjob <cronjob_name>` |
+| Get cronjob in yaml | `kubectl get cronjob <cronjob_name> -o yaml` |
+| Edit cronjob | `kubectl edit cronjob <cronjob_name>` |
+| Describe cronjob | `kubectl describe cronjob <cronjob_name>` |
+| Delete cronjob | `kubectl delete cronjob <cronjob_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
