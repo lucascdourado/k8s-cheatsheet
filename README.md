@@ -16,6 +16,7 @@
   - [Job Commands](#job-commands)
   - [CronJob Commands](#cronjob-commands)
   - [Network Policy Commands](#network-policy-commands)
+  - [Labels and Selectors Commands](#labels-and-selectors-commands)
 
 
 
@@ -215,5 +216,15 @@
 | Edit network policy | `kubectl edit networkpolicy <networkpolicy_name>` |
 | Describe network policy | `kubectl describe networkpolicy <networkpolicy_name>` |
 | Delete network policy | `kubectl delete networkpolicy <networkpolicy_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Labels and Selectors Commands
+
+| Name | Command |
+| --- | --- |
+| Show labels of node, pod or deployment | `kubectl get <node/pod/deployment> --show-labels` |
+| Attach label to node, pod or deployment | `kubectl label <node/pod/deployment> <name> <label_key>=<label_value>` |
+| Remove label from node, pod or deployment | `kubectl label <node/pod/deployment> <name> <label_key>-` |
+| Get all node, pod or deployment with specific label | `kubectl get <node/pod/deployment> -l <label_key>=<label_value>` |
 
 [⇡home](#kubernetes-cheatsheet)
