@@ -15,6 +15,7 @@
   - [Rollout Commands](#rollout-commands)
   - [Job Commands](#job-commands)
   - [CronJob Commands](#cronjob-commands)
+  - [Network Policy Commands](#network-policy-commands)
 
 
 
@@ -202,5 +203,17 @@
 | Edit cronjob | `kubectl edit cronjob <cronjob_name>` |
 | Describe cronjob | `kubectl describe cronjob <cronjob_name>` |
 | Delete cronjob | `kubectl delete cronjob <cronjob_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Network Policy Commands
+
+| Name | Command |
+| --- | --- |
+| Get network policy | `kubectl get networkpolicy <networkpolicy_name>` |
+| Get network policy in yaml | `kubectl get networkpolicy <networkpolicy_name> -o yaml` |
+| Get network policy wide information | `kubectl get networkpolicy <networkpolicy_name> -o wide` |
+| Edit network policy | `kubectl edit networkpolicy <networkpolicy_name>` |
+| Describe network policy | `kubectl describe networkpolicy <networkpolicy_name>` |
+| Delete network policy | `kubectl delete networkpolicy <networkpolicy_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
