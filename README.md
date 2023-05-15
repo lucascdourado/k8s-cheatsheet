@@ -6,6 +6,7 @@
   - [Pod Commands](#pod-commands)
   - [Deployment Commands](#deployment-commands)
   - [Service Commands](#service-commands)
+  - [Endpoint Commands](#endpoint-commands)
 
 
 
@@ -101,3 +102,12 @@
 | Delete service | `kubectl delete service <service_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
+## Endpoint Commands
+
+| Name | Command |
+| --- | --- |
+| Get endpoint | `kubectl get endpoint <endpoint_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+
+
