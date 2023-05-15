@@ -9,6 +9,10 @@
   - [Endpoint Commands](#endpoint-commands)
   - [Ingress Commands](#ingress-commands)
   - [DaemonSet Commands](#daemonset-commands)
+  - [StatefulSet Commands](#statefulset-commands)
+  - [ConfigMap Commands](#configmap-commands)
+  - [Secret Commands](#secret-commands)
+  - [Rollout Commands](#rollout-commands)
 
 
 
@@ -134,4 +138,47 @@
 | Delete daemonset | `kubectl delete daemonset <daemonset_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
+## StatefulSet Commands
 
+| Name | Command |
+| --- | --- |
+| Get statefulset | `kubectl get statefulset <statefulset_name>` |
+| Get statefulset in yaml | `kubectl get statefulset <statefulset_name> -o yaml` |
+| Edit statefulset | `kubectl edit statefulset <statefulset_name>` |
+| Describe statefulset | `kubectl describe statefulset <statefulset_name>` |
+| Delete statefulset | `kubectl delete statefulset <statefulset_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## ConfigMap Commands
+
+| Name | Command |
+| --- | --- |
+| Get configmap | `kubectl get configmap <configmap_name>` |
+| Get configmap in yaml | `kubectl get configmap <configmap_name> -o yaml` |
+| Edit configmap | `kubectl edit configmap <configmap_name>` |
+| Describe configmap | `kubectl describe configmap <configmap_name>` |
+| Delete configmap | `kubectl delete configmap <configmap_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Secret Commands
+
+| Name | Command |
+| --- | --- |
+| Get secret | `kubectl get secret <secret_name>` |
+| Get secret in yaml | `kubectl get secret <secret_name> -o yaml` |
+| Edit secret | `kubectl edit secret <secret_name>` |
+| Describe secret | `kubectl describe secret <secret_name>` |
+| Delete secret | `kubectl delete secret <secret_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Rollout Commands
+
+| Name | Command |
+| --- | --- |
+| Restart deployment | `kubectl rollout restart deployment <deployment_name>` |
+| Undo deployment with last revision | `kubectl rollout undo deployment <deployment_name>` |
+| Undo deployment with specific revision | `kubectl rollout undo deployment <deployment_name> --to-revision=<revision_number>` |
+| Get all revisions of deployment | `kubectl rollout history deployment <deployment_name>` |
+| Get specific revision of deployment | `kubectl rollout history deployment <deployment_name> --revision=<revision_number>` |
+
+[⇡home](#kubernetes-cheatsheet)
