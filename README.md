@@ -1,7 +1,14 @@
 # Kubernetes Cheatsheet
 
-## Creating Objects
+- [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
+  - [Creating Objects](#creating-objects)
+  - [Monitoring Usage Commands](#monitoring-usage-commands)
+  - [Node Commands](#node-commands)
+  - [Pod Commands](#pod-commands)
+  - [Deployment Commands](#deployment-commands)
 
+
+## Creating Objects
 | Name | Command |
 | --- | --- |
 | Create resource | `kubectl apply -f ./<file_name>.yaml `| 
@@ -27,6 +34,8 @@
 | Create job from cronjob | `kubectl create job <job_name> --from=cronjob/<cronjob_name>` |
 | Create cronjob | `kubectl create cronjob --image=<image_name> --schedule='<cron-syntax>' -- <command> <args>` |
 
+[home ⤴](#kubernetes-cheatsheet)
+
 ## Monitoring Usage Commands
 
 | Name | Command |  
@@ -34,6 +43,7 @@
 | Get node cpu and memory utilization | `kubectl top node <node_name>` |
 | Get pod cpu and memory utilization | `kubectl top pods <pod_name>` |
 
+[home ⤴](#kubernetes-cheatsheet)
 ## Node Commands
 
 | Name | Command |
@@ -46,6 +56,7 @@
 | Uncordon node | `kubectl uncordon node <node_name>` |
 | Delete node | `kubectl delete node <node_name>` |
 
+[home ⤴](#kubernetes-cheatsheet)
 ## Pod Commands
 
 | Name | Command |
@@ -61,4 +72,5 @@
 | Tail -f pod | `kubectl logs pod -f <pod_name>` |
 | Exec pod | `kubectl exec -it <pod_name> -- <command>` |
 
+[home ⤴](#kubernetes-cheatsheet)
 ## Deployment Commands
