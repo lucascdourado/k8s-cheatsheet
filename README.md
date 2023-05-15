@@ -38,9 +38,9 @@
 
 | Name | Command |
 | --- | --- |
-| Describe node | ```kubectl describe node <node_name>``` |
-| Get node in yaml | ```kubectl get node <node_name> -o yaml``` |
-| Get node  | ```kubectl get node <node_name>``` |
+| Describe node | `kubectl describe node <node_name>` |
+| Get node in yaml | `kubectl get node <node_name> -o yaml` |
+| Get node  | `kubectl get node <node_name>` |
 | Drain node | ```kubectl drain node <node_name>``` |
 | Cordon node | ```kubectl cordon node <node_name>``` |
 | Uncordon node | ```kubectl uncordon node <node_name>``` |
