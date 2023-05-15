@@ -1,11 +1,9 @@
 # Kubernetes Cheatsheet
-
-- [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
-  - [Creating Objects](#creating-objects)
-  - [Monitoring Usage Commands](#monitoring-usage-commands)
-  - [Node Commands](#node-commands)
-  - [Pod Commands](#pod-commands)
-  - [Deployment Commands](#deployment-commands)
+- [Creating Objects](#creating-objects)
+- [Monitoring Usage Commands](#monitoring-usage-commands)
+- [Node Commands](#node-commands)
+- [Pod Commands](#pod-commands)
+- [Deployment Commands](#deployment-commands)
 
 
 ## Creating Objects
