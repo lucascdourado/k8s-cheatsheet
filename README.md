@@ -7,6 +7,7 @@
   - [Deployment Commands](#deployment-commands)
   - [Service Commands](#service-commands)
   - [Endpoint Commands](#endpoint-commands)
+  - [Ingress Commands](#ingress-commands)
 
 
 
@@ -107,6 +108,18 @@
 | Name | Command |
 | --- | --- |
 | Get endpoint | `kubectl get endpoint <endpoint_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Ingress Commands
+
+| Name | Command |
+| --- | --- |
+| Get ingress | `kubectl get ingress <ingress_name>` |
+| Get ingress in yaml | `kubectl get ingress <ingress_name> -o yaml` |
+| Get ingress wide information | `kubectl get ingress <ingress_name> -o wide` |
+| Edit ingress | `kubectl edit ingress <ingress_name>` |
+| Describe ingress | `kubectl describe ingress <ingress_name>` |
+| Delete ingress | `kubectl delete ingress <ingress_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
 
