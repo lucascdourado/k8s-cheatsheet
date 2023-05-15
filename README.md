@@ -8,6 +8,7 @@
   - [Service Commands](#service-commands)
   - [Endpoint Commands](#endpoint-commands)
   - [Ingress Commands](#ingress-commands)
+  - [DaemonSet Commands](#daemonset-commands)
 
 
 
@@ -122,5 +123,15 @@
 | Delete ingress | `kubectl delete ingress <ingress_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
+## DaemonSet Commands
 
+| Name | Command |
+| --- | --- |
+| Get daemonset | `kubectl get daemonset <daemonset_name>` |
+| Get daemonset in yaml | `kubectl get daemonset <daemonset_name> -o yaml` |
+| Edit daemonset | `kubectl edit daemonset <daemonset_name>` |
+| Describe daemonset | `kubectl describe daemonset <daemonset_name>` |
+| Delete daemonset | `kubectl delete daemonset <daemonset_name>` |
+
+[⇡home](#kubernetes-cheatsheet)
 
