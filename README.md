@@ -5,6 +5,7 @@
   - [Node Commands](#node-commands)
   - [Pod Commands](#pod-commands)
   - [Deployment Commands](#deployment-commands)
+  - [Service Commands](#service-commands)
 
 
 
@@ -86,5 +87,17 @@
 | Log deployment | `kubectl logs deployment/<deployment_name> -f` |
 | Update image | `kubectl set image deployment <deployment_name> <container_name>=<new_image_name>` |
 | Scale deployment with replicas | `kubectl scale deployment <deployment_name> --replicas=<replicas>` |
+
+[⇡home](#kubernetes-cheatsheet)
+## Service Commands
+
+| Name | Command |
+| --- | --- |
+| Get service | `kubectl get service <service_name>` |
+| Get service in yaml | `kubectl get service <service_name> -o yaml` |
+| Get service wide information | `kubectl get service <service_name> -o wide` |
+| Edit service | `kubectl edit service <service_name>` |
+| Describe service | `kubectl describe service <service_name>` |
+| Delete service | `kubectl delete service <service_name>` |
 
 [⇡home](#kubernetes-cheatsheet)
