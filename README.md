@@ -25,7 +25,7 @@
 | Create secret from file | `kubectl create secret generic <secret_name> --from-file=<file_name>` |
 | Create job | `kubectl create job <job_name> --image <image_name>` |
 | Create job from cronjob | `kubectl create job <job_name> --from=cronjob/<cronjob_name>` |
-| Create cronjob | ```kubectl create cronjob --image=<image_name> --schedule='<cron-syntax>' -- <command> <args>``` |
+| Create cronjob | `kubectl create cronjob --image=<image_name> --schedule='<cron-syntax>' -- <command> <args>` |
 
 ## Monitoring Usage Commands
 
@@ -50,3 +50,15 @@
 
 | Name | Command |
 | --- | --- |
+| Get pod | `kubectl get pod <pod_name>` |
+| Get pod in yaml | `kubectl get pod <pod_name> -o yaml` |
+| Get pod in wide format | `kubectl get pod <pod_name> -o wide` |
+| Get pod with watch | `kubectl get pod <pod_name> -w` |
+| Edit pod | `kubectl edit pod <pod_name>` |
+| Describe pod | `kubectl describe pod <pod_name>` |
+| Delete pod | `kubectl delete pod <pod_name>` |
+| Log pod | `kubectl logs pod <pod_name>` |
+| Tail -f pod | `kubectl logs pod -f <pod_name>` |
+| Exec pod | `kubectl exec -it <pod_name> -- <command>` |
+
+## Deployment Commands
