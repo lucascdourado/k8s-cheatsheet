@@ -32,7 +32,7 @@
 | Create job from cronjob | `kubectl create job <job_name> --from=cronjob/<cronjob_name>` |
 | Create cronjob | `kubectl create cronjob --image=<image_name> --schedule='<cron-syntax>' -- <command> <args>` |
 
-[⇡ home](#kubernetes-cheatsheet)
+[⇡home](#kubernetes-cheatsheet)
 
 ## Monitoring Usage Commands
 
