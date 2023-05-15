@@ -25,7 +25,7 @@
 | Create secret from file | `kubectl create secret generic <secret_name> --from-file=<file_name>` |
 | Create job | `kubectl create job <job_name> --image <image_name>` |
 | Create job from cronjob | `kubectl create job <job_name> --from=cronjob/<cronjob_name>` |
-| Create cronjob | `kubectl create cronjob --image=<image_name> --schedule='<cron-syntax>' -- <command> <args>` |
+| Create cronjob | ```kubectl create cronjob --image=<image_name> --schedule='<cron-syntax>' -- <command> <args>``` |
 
 ## Monitoring Usage Commands
 
