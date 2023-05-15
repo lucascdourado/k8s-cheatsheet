@@ -1,9 +1,11 @@
 # Kubernetes Cheatsheet
-- [Creating Objects](#creating-objects)
-- [Monitoring Usage Commands](#monitoring-usage-commands)
-- [Node Commands](#node-commands)
-- [Pod Commands](#pod-commands)
-- [Deployment Commands](#deployment-commands)
+- [Kubernetes Cheatsheet](#kubernetes-cheatsheet)
+  - [Creating Objects](#creating-objects)
+  - [Monitoring Usage Commands](#monitoring-usage-commands)
+  - [Node Commands](#node-commands)
+  - [Pod Commands](#pod-commands)
+  - [Deployment Commands](#deployment-commands)
+
 
 
 ## Creating Objects
@@ -72,3 +74,17 @@
 
 [⇡home](#kubernetes-cheatsheet)
 ## Deployment Commands
+
+| Name | Command |
+| --- | --- |
+| Get deployment | `kubectl get deployment <deployment_name>` |
+| Get deployment in yaml | `kubectl get deployment <deployment_name> -o yaml` |
+| Get deployment wide information | `kubectl get deployment <deployment_name> -o wide` |
+| Edit deployment | `kubectl edit deployment <deployment_name>` |
+| Describe deployment | `kubectl describe deployment <deployment_name>` |
+| Delete deployment | `kubectl delete deployment <deployment_name>` |
+| Log deployment | `kubectl logs deployment/<deployment_name> -f` |
+| Update image | `kubectl set image deployment <deployment_name> <container_name>=<new_image_name>` |
+| Scale deployment with replicas | `kubectl scale deployment <deployment_name> --replicas=<replicas>` |
+
+[⇡home](#kubernetes-cheatsheet)
